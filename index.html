@@ -21,6 +21,19 @@ a:focus-visible,button:focus-visible{outline:2px solid #B3122E;outline-offset:3p
 img{max-width:100%}
 [hidden]{display:none!important}
 @media (max-width: 760px){.hero-photo{order:-1;max-width:360px;margin:0 auto;}#site-header nav{display:none}#site-header{flex-wrap:nowrap;padding:16px 0}}
+@media (max-width: 760px){
+.stats{display:grid!important;grid-template-columns:repeat(3,minmax(0,1fr));gap:0!important}
+.stats>div{padding:0 0 0 14px!important;margin:0!important;border-right:0!important;border-left:2px solid #B3122E}
+.stats>div:first-child{border-left:0;padding-left:0!important}
+.stats dt{font-size:34px!important}
+.stats dd{font-size:13px!important;line-height:1.35;padding-right:6px}
+.do-row{flex-direction:column;align-items:flex-start!important;gap:10px!important;padding:28px 0!important}
+.do-row>span:first-child{flex:none!important;color:#B3122E!important;font-weight:700}
+.do-row>h3,.do-row>p,.do-row>div{flex:none!important;width:100%}
+.do-row>h3{font-size:26px!important}
+.do-row>a{flex:none!important;margin-top:6px}
+.do-spacer{display:none!important}
+}
 .label{margin:0 0 16px;display:flex;align-items:center;gap:12px;font-size:14px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:#B3122E}
 .label::before{content:"";display:inline-block;width:40px;height:3px;background:#B3122E}
 .page-h1{margin:0 0 20px;font-weight:300;font-size:clamp(48px,7vw,96px);line-height:.98;letter-spacing:-.045em}
@@ -66,7 +79,7 @@ img{max-width:100%}
 <p style="margin: 32px 0 0; font-size: 36px; font-weight: 500; line-height: 1.15; letter-spacing: -0.02em; max-width: 30rem">Vision needs an engine. <br>And I build that <em style="font-family: &quot;Instrument Serif&quot;, serif; font-weight: 400; font-size: 1.15em; color: rgb(179, 18, 46)">engine.</em></p>
 <p style="margin: 24px 0 0; color: #333333; max-width: 38rem;">Twenty years in: marketing and advertising work that sold for brands like Toyota and TVS, operations-heavy businesses run from the inside, and now an AI platform built from the ground up at Zaper. Different rooms, different problems, same outcome: it runs.</p>
 <p style="margin: 14px 0 0; color: #555555; max-width: 38rem;">These days I jam with visionaries, teams and businesses to get more things done, with AI and without it :)</p>
-<dl style="display: flex; flex-wrap: wrap; gap: 24px 0; margin: 40px 0 0;">
+<dl class="stats" style="display: flex; flex-wrap: wrap; gap: 24px 0; margin: 40px 0 0;">
 <div style="padding: 0 36px 0 0; margin-right: 36px; border-right: 2px solid #B3122E;"><dt style="font-size: clamp(36px, 4vw, 48px); font-weight: 300; line-height: 1; letter-spacing: -0.02em;">20+</dt><dd style="margin: 8px 0 0; font-size: 14px; color: #555555;">Years of getting it done</dd></div>
 <div style="padding: 0 36px 0 0; margin-right: 36px; border-right: 2px solid #B3122E;"><dt style="font-size: clamp(36px, 4vw, 48px); font-weight: 300; line-height: 1; letter-spacing: -0.02em;">3x</dt><dd style="margin: 8px 0 0; font-size: 14px; color: #555555;">Start-up founder</dd></div>
 <div><dt style="font-size: clamp(36px, 4vw, 48px); font-weight: 300; line-height: 1; letter-spacing: -0.02em;">4</dt><dd style="margin: 8px 0 0; font-size: 14px; color: #555555;">Industries, one way of working</dd></div>
@@ -111,26 +124,26 @@ img{max-width:100%}
 </div>
 </div>
 <div style="border-top: 1px solid #111111;">
-<article style="display: flex; flex-wrap: wrap; align-items: center; gap: 16px 40px; padding: 32px 0; border-bottom: 1px solid #CFCFCB;">
+<article class="do-row" style="display: flex; flex-wrap: wrap; align-items: center; gap: 16px 40px; padding: 32px 0; border-bottom: 1px solid #CFCFCB;">
 <span style="flex: 0 0 56px; font-size: 15px; color: #8A8A86;">01</span>
 <h3 style="flex: 0 1 260px; margin: 0; font-weight: 500; font-size: 30px; line-height: 1.15; letter-spacing: -0.02em;">Building the machinery</h3>
 <div style="flex: 1 1 340px; min-width: 0;">
 <p style="margin: 0 0 8px; color: #444444;">Taking an idea, or a business that has outgrown its first shape, and building the machinery underneath it: the company, the team, the way the work gets done.</p>
 <p style="margin: 0; font-size: 14px; font-weight: 600; letter-spacing: 0.04em; color: #B3122E;">Zaper · YellowZap · UniPas</p>
 </div>
-<span style="flex: 0 0 150px;"></span>
+<span class="do-spacer" style="flex: 0 0 150px;"></span>
 </article>
-<article style="display: flex; flex-wrap: wrap; align-items: center; gap: 16px 40px; padding: 32px 0; border-bottom: 1px solid #CFCFCB;">
+<article class="do-row" style="display: flex; flex-wrap: wrap; align-items: center; gap: 16px 40px; padding: 32px 0; border-bottom: 1px solid #CFCFCB;">
 <span style="flex: 0 0 56px; font-size: 15px; color: #8A8A86;">02</span>
 <h3 style="flex: 0 1 260px; margin: 0; font-weight: 500; font-size: 30px; line-height: 1.15; letter-spacing: -0.02em;">Marketing &amp; operations</h3>
 <p style="flex: 1 1 340px; margin: 0; color: #444444;">Campaigns, production units and field teams, from a Toyota launch to a home-services platform grown 15x. The detail sits one click away.</p>
-<a href="#done" data-go="done" style="flex: 0 0 auto; display: inline-flex; align-items: center; gap: 10px; min-height: 48px; padding: 0 24px; border-radius: 999px; background: #111111; color: #FFFFFF; font-weight: 600; font-size: 15px; text-decoration: none;">Read more <span aria-hidden="true">↗</span></a>
+<a href="#done" data-go="done" style="flex: 0 0 auto; display: inline-flex; align-items: center; gap: 10px; min-height: 48px; padding: 0 24px; border-radius: 999px; background: #111111; color: #FFFFFF; font-weight: 600; font-size: 15px; text-decoration: none;">Read more <span aria-hidden="true">↗︎</span></a>
 </article>
-<article style="display: flex; flex-wrap: wrap; align-items: center; gap: 16px 40px; padding: 32px 0; border-bottom: 1px solid #CFCFCB;">
+<article class="do-row" style="display: flex; flex-wrap: wrap; align-items: center; gap: 16px 40px; padding: 32px 0; border-bottom: 1px solid #CFCFCB;">
 <span style="flex: 0 0 56px; font-size: 15px; color: #8A8A86;">03</span>
 <h3 style="flex: 0 1 260px; margin: 0; font-weight: 500; font-size: 30px; line-height: 1.15; letter-spacing: -0.02em;">AI of things</h3>
 <p style="flex: 1 1 340px; margin: 0; color: #444444;">Practical AI for real businesses, from a platform I co-built to mapping where AI fits in a team. It has to fit the business, not the other way round.</p>
-<a href="#ai" data-go="ai" style="flex: 0 0 auto; display: inline-flex; align-items: center; gap: 10px; min-height: 48px; padding: 0 24px; border-radius: 999px; background: #B3122E; color: #FFFFFF; font-weight: 600; font-size: 15px; text-decoration: none;">Read more <span aria-hidden="true">↗</span></a>
+<a href="#ai" data-go="ai" style="flex: 0 0 auto; display: inline-flex; align-items: center; gap: 10px; min-height: 48px; padding: 0 24px; border-radius: 999px; background: #B3122E; color: #FFFFFF; font-weight: 600; font-size: 15px; text-decoration: none;">Read more <span aria-hidden="true">↗︎</span></a>
 </article>
 </div>
 </section>
@@ -149,7 +162,7 @@ img{max-width:100%}
 <span style="display: block; font-weight: 500; font-size: clamp(24px, 3vw, 34px); line-height: 1.15; letter-spacing: -0.02em; margin-bottom: 10px;">Where AI Belongs in Your Team: The Dealer Panel Test</span>
 <span style="display: block; color: #555555;">I was building an AI company, and everyone I'd sell to feared AI would take their job. So I tested that fear on my own advertising career, starting with the dealer panel.</span>
 </span>
-<span style="display: inline-grid; place-items: center; width: 64px; height: 64px; border-radius: 50%; background: #B3122E; color: #FFFFFF; font-size: 24px;" aria-hidden="true">↗</span>
+<span style="display: inline-grid; place-items: center; width: 64px; height: 64px; border-radius: 50%; background: #B3122E; color: #FFFFFF; font-size: 24px;" aria-hidden="true">↗︎</span>
 </a>
 </section>
 
@@ -349,7 +362,7 @@ arts.forEach(function(a){var li=el('li'),ln=el('a','post-link');ln.href='#'+a.id
  var s=el('span');s.style.flex='1 1 480px';s.style.minWidth='0';
  s.appendChild(el('span','post-meta',fmt(a.date)+' · '+mins(a.body)));s.appendChild(el('span','post-title',a.title));
  if(a.summary)s.appendChild(el('span','post-sum',a.summary));ln.appendChild(s);
- var ar=el('span','post-arrow','↗');ar.setAttribute('aria-hidden','true');ln.appendChild(ar);li.appendChild(ln);list.appendChild(li)});
+ var ar=el('span','post-arrow','↗︎');ar.setAttribute('aria-hidden','true');ln.appendChild(ar);li.appendChild(ln);list.appendChild(li)});
 function openArticle(id){var a=arts.filter(function(x){return x.id===id})[0];if(!a)return;var box=document.getElementById('article');box.textContent='';
  box.appendChild(el('h1',null,a.title));box.appendChild(el('p','meta',fmt(a.date)+' · '+mins(a.body)));
  String(a.body||'').split(/\n\s*\n/).forEach(function(b){b=b.trim();if(!b)return;
